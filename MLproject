@@ -1,0 +1,10 @@
+name: KNeighborsRegressor
+
+conda_env: KNeighRegr.yaml
+
+entry_points:
+  main:
+    parameters:
+      degree: {type: int, default: 3}
+      splits: {type: int, default: 5}
+    command: "python MLflow_Kneigh.py {degree} {splits}"
